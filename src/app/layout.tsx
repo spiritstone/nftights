@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import { AppKitProvider } from "@/context";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +29,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Navbar />
+        <AppKitProvider>
+          {children}
+        </AppKitProvider>
+        <footer className="text-center p-4 bg-gray-900 text-white">
+          &copy; {new Date().getFullYear()} NFT Investment Insights. All Rights Reserved.
+        </footer>
       </body>
     </html>
   );
