@@ -20,7 +20,7 @@ export default function ConnectButton() {
     const { address, isConnected } = useAppKitAccount();
     return (
         <div className="flex gap-1 flex-col">
-            {isConnected ? (<button className="text-wrap px-3 py-1 bg-purple-500 text-white font-bold rounded-full">{address}</button>) : (<button onClick={() => modal.open()} className="px-3 py-1 bg-purple-500 text-white font-bold rounded-full w-full">Connect Wallet</button>)}
+            {isConnected ? (<button className="text-wrap px-3 py-1 bg-white text-nft_darkPurple font-bold rounded-full">{address}</button>) : (<button onClick={() => modal.open()} className="px-3 py-1 bg-purple-500 text-white font-bold rounded-full w-full">Connect Wallet</button>)}
             {isConnected && (<button onClick={() => modal.open({ view: 'Networks' })}
                 className="text-white font-semibold">Choose Network</button>)}
         </div>

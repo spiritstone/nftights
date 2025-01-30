@@ -61,13 +61,13 @@ export default function Portfolio() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Pie Chart */}
-                <div className="bg-white shadow-md rounded-lg p-6">
+                <div className="opacity-40 bg-white shadow-md rounded-lg p-6 text-nft_mdDarkPurple text-opacity-100">
                     <h2 className="text-xl font-semibold text-center mb-4">Portfolio Distribution</h2>
                     <Pie data={pieData} />
                 </div>
 
                 {/* Line Chart */}
-                <div className="bg-white shadow-md rounded-lg p-6">
+                <div className="bg-white shadow-md rounded-lg p-6 text-Black">
                     <h2 className="text-xl font-semibold text-center mb-4">Portfolio Value Over Time</h2>
                     <Line data={lineData} />
                 </div>

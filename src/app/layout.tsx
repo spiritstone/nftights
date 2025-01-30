@@ -27,14 +27,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased w-screen h-full bg-nft_darkPurple text-white`}
       >
         <Navbar />
         <AppKitProvider>
           {children}
         </AppKitProvider>
-        <footer className="text-center p-4 bg-gray-900 text-white">
-          &copy; {new Date().getFullYear()} NFT Investment Insights. All Rights Reserved.
+        <footer className="fixed w-full text-center p-4 bg-nft_darkPurple text-white bottom-0">
+          &copy; {new Date().getFullYear()} NFTights. All Rights Reserved.
         </footer>
       </body>
     </html>

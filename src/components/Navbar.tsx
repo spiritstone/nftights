@@ -4,12 +4,12 @@ import ConnectButton from './ConnectButton';
 
 export default function Navbar() {
     return (
-        <nav className="bg-gray-800 p-4">
+        <div className="bg-nft_darkPurple py-4 gap-4 flex items-center">
             <div className="container mx-auto flex justify-between items-center">
                 <Link href="/" className="text-white text-2xl font-bold">
                     NFT Insights
                 </Link>
-                <div className="flex flex-row gap-2">
+                <div className="flex flex-row gap-2 items-center">
                     <Link href="/portfolio" className="text-white mx-4">Portfolio</Link>
                     <Link href="/collection" className="text-white mx-4">Collections</Link>
                     <Link href="/alerts" className="text-white mx-4">Alerts</Link>
@@ -19,6 +19,6 @@ export default function Navbar() {
 
                 </div>
             </div>
-        </nav>
+        </div>
     );
 }

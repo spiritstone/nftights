@@ -23,7 +23,7 @@ export const ActionButtonList = () => {
 
 
     return (
-        <div className="flex flex-row gap-2 px-3 py-1 bg-purple-500 text-white font-bold rounded-full w-full">
+        <div className="flex flex-row gap-2 px-3 py-1 bg-white text-nft_darkPurple font-bold rounded-full w-full">
             {/* <button className="" onClick={() => open()}>Open</button> */}
             {isConnected ? (<>
                 <div>{truncateAddress(address!)}</div>

@@ -42,7 +42,7 @@ export default function Alerts() {
                 Stay updated with real-time NFT price changes and never miss an opportunity.
             </p>
 
-            <div className="max-w-lg mx-auto bg-white shadow-md rounded-lg p-6">
+            <div className="max-w-lg mx-auto bg-white shadow-md rounded-lg p-6 text-Black">
                 <h2 className="text-xl font-semibold mb-4">Add New Alert</h2>
                 <input
                     type="text"

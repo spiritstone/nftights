@@ -9,6 +9,15 @@ export default {
   theme: {
     extend: {
       colors: {
+        // nft_darkPurple: "#330d85",
+        nft_darkPurple: "#0f0529",
+        nft_mdDarkPurple: "#4a2574",
+        nft_purple: "#806bf4",
+        nft_mdLightPurple: "#924dbf",
+        nft_lightPurple: "#9e72c3",
+        nft_yellow: "#fff45e",
+        nft_pink: "#f76fae",
+        Black: "#202020",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
